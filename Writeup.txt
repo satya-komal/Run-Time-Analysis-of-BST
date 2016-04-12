@@ -1,0 +1,102 @@
+Inorder:
+
+1.Insertion
+
+100000 nodes:
+
+Total time: 36.5115 seconds
+Each find call on 0 nodes BST takes0seconds
+Each find call on 10000 nodes BST takes7.3e-05seconds
+Each find call on 20000 nodes BST takes0.000124seconds
+Each find call on 30000 nodes BST takes0.000182seconds
+Each find call on 40000 nodes BST takes0.000241seconds
+Each find call on 50000 nodes BST takes0.000299seconds
+Each find call on 60000 nodes BST takes0.000359seconds
+Each find call on 70000 nodes BST takes0.000419seconds
+Each find call on 80000 nodes BST takes0.000482seconds
+Each find call on 90000 nodes BST takes0.000553seconds
+Each find call on 100000 nodes BST takes0.000629seconds
+
+750000 nodes:
+
+Total time: 15.7888 seconds
+Each find call on 0 nodes BST takes0seconds
+Each find call on 10000 nodes BST takes6.3e-05seconds
+Each find call on 20000 nodes BST takes0.00012seconds
+Each find call on 30000 nodes BST takes0.000177seconds
+Each find call on 40000 nodes BST takes0.000235seconds
+Each find call on 50000 nodes BST takes0.000293seconds
+Each find call on 60000 nodes BST takes0.000352seconds
+Each find call on 70000 nodes BST takes0.000411seconds
+
+50000 nodes:
+
+Total time: 6.66336 seconds
+Each find call on 0 nodes BST takes0seconds
+Each find call on 10000 nodes BST takes5.9e-05seconds
+Each find call on 20000 nodes BST takes0.000116seconds
+Each find call on 30000 nodes BST takes0.000174seconds
+Each find call on 40000 nodes BST takes0.000231seconds
+Each find call on 50000 nodes BST takes0.000289seconds
+
+
+Random order:
+
+1.Insertion:
+
+100000 nodes:
+
+Total time: 0.03367 seconds
+Each find call on 0 nodes BST takes0seconds
+Each find call on 10000 nodes BST takes1e-06seconds
+Each find call on 20000 nodes BST takes0seconds
+Each find call on 30000 nodes BST takes0seconds
+Each find call on 40000 nodes BST takes0seconds
+Each find call on 50000 nodes BST takes1e-06seconds
+Each find call on 60000 nodes BST takes1e-06seconds
+Each find call on 70000 nodes BST takes1e-06seconds
+Each find call on 80000 nodes BST takes1e-06seconds
+Each find call on 90000 nodes BST takes0seconds
+
+75000 nodes:
+
+Total time: 0.020196 seconds
+Each find call on 0 nodes BST takes0seconds
+Each find call on 10000 nodes BST takes1e-06seconds
+Each find call on 20000 nodes BST takes0seconds
+Each find call on 30000 nodes BST takes1e-06seconds
+Each find call on 40000 nodes BST takes1e-06seconds
+Each find call on 50000 nodes BST takes0seconds
+Each find call on 60000 nodes BST takes0seconds
+Each find call on 70000 nodes BST takes1e-06seconds
+
+50000 nodes:
+
+Total time: 0.013036 seconds
+Each find call on 0 nodes BST takes0seconds
+Each find call on 10000 nodes BST takes1e-06seconds
+Each find call on 20000 nodes BST takes1e-06seconds
+Each find call on 30000 nodes BST takes1e-06seconds
+Each find call on 40000 nodes BST takes0seconds
+
+Comments:
+
+For Inorder insertion the BST has to traverse all the way starting from the root to all the elements to its left and then to all the elements to the right of the root.So when there are way too many nodes (say 100000 like in our first case), it takes more time to insert the nodes.The time reduces as the no of nodes to insert decreases, which is shown in the results above.
+
+We can see from above the total time to insert the nodes decreases as the no of nodes decreases:
+1.100000 -36.5115 seconds
+2.75000  -15.7888 seconds
+3.50000  -6.66336 seconds
+
+Also the time taken taken to first corresponding 10000 nodes is less for the BST with less no of nodes (which is 50000) in this case and these results can be seen from above.Also the worst case for insertion is of order O(n).
+
+Whereas for the random order insertion, the BST does not have to follow any specific rule and the insertion occurs very fast, no matter how many no of nodes are present and the orderin this case would be O(logn).
+
+We can see from above the total time to insert the nodes does not change much:
+1.100000 -0.03367 seconds
+2.75000  -0.020196 seconds
+3.50000  -0.013036 seconds
+
+
+
+
